@@ -164,7 +164,7 @@ describe("GetAt", () => {
   });
 });
 
-describe.skip("RemoveAt", () => {
+describe("RemoveAt", () => {
   test("removeAt doesnt crash on an empty list", () => {
     const l = new List();
     expect(() => {
@@ -272,7 +272,7 @@ describe("InsertAt", () => {
   });
 });
 
-describe.skip("ForEach", () => {
+describe("ForEach", () => {
   test("applies a transform to each node", () => {
     const l = new List();
 
@@ -281,7 +281,7 @@ describe.skip("ForEach", () => {
     l.insertLast(3);
     l.insertLast(4);
 
-    l.forEach(node => {
+    l.forEach((node, c) => {
       node.data += 10;
     });
 
@@ -292,7 +292,7 @@ describe.skip("ForEach", () => {
   });
 });
 
-describe.skip("for...of loops", () => {
+describe("for...of loops", () => {
   test("works with the linked list", () => {
     const l = new List();
 
